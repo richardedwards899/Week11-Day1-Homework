@@ -1,6 +1,26 @@
+var catData = [
+  {
+    name: "Percy",
+    food: "marshmallows",
+    source: "https://static.tumblr.com/c1f89b11cd6a3ee36569ceeb0dd68b97/ch8ksnx/MJfo76s52/tumblr_static_tumblr_static_7j4q1juw448woo4w4og884kc8_640.jpg"
+  },
+  {
+    name: "Wallace",
+    food: "fried eggs",
+    source: "https://static.tumblr.com/77bb66d4ce332363485b8ed564d2f4fa/aqcdekz/R0Xntujc7/tumblr_static_tumblr_static_ckfz979bhz40o0s0s8ocwsws0_640.jpg"
+  },
+  {
+    name: "Eustace Warnaby-Green",
+    food: "old, chewy Wotsits",
+    source: "http://www.lovethispic.com/uploaded_images/167368-Spring-Cat.jpg"
+  }
+]
+
 var app = function(){
-  var src = "https://static.tumblr.com/c1f89b11cd6a3ee36569ceeb0dd68b97/ch8ksnx/MJfo76s52/tumblr_static_tumblr_static_7j4q1juw448woo4w4og884kc8_640.jpg";
-  addCat("Percy", "marshmallows", src);
+
+  for (var cat of catData){
+    addCat(cat.name, cat.food, cat.source);
+  }
 }
 
 var addCat = function(name, food, src){
